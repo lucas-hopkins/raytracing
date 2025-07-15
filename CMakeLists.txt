@@ -9,27 +9,23 @@ cmake_minimum_required ( VERSION 3.10...4.0.0 )
 project ( RTWeekend LANGUAGES CXX )
 
 # Set to C++11
-set ( CMAKE_CXX_STANDARD          11)
-set ( CMAKE_CXX_STANDARD_REQUIRED ON)
-set ( CMAKE_CXX_EXTENSIONS       OFF)
+set ( CMAKE_CXX_STANDARD          11 )
+set ( CMAKE_CXX_STANDARD_REQUIRED ON )
+set ( CMAKE_CXX_EXTENSIONS       OFF )
 
 # Source
 
-set ( EXTERNAL
-	src/external/stb_image.h
-)
-
 set ( SOURCE_ONE_WEEKEND
-	src/raytracer/main.cc
+	src/inOneWeekend/main.cc
 )
 
 include_directories(src)
 
 # Specific compiler flags below. We're going to add options for all possible compilers
 
-message (STATUS "Compiler ID: " $(CMAKE_CXX_COMPILER_ID))
-message (STATUS "Release flags: "$(CMAKE_CXX_FLAGS_RELEASE))
-message (STATUS "Debug flags: "$(CMAKE_CXX_FLAGS_DEBUG))
+message ( STATUS "Compiler ID: " $( CMAKE_CXX_COMPILER_ID ))
+message ( STATUS "Release flags: " $ ( CMAKE_CXX_FLAGS_RELEASE ))
+message ( STATUS "Debug flags: " $( CMAKE_CXX_FLAGS_DEBUG ))
 
 if (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
 	# /wd #### - Disable warning
