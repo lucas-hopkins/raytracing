@@ -18,6 +18,11 @@ set ( CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set ( SOURCE_ONE_WEEKEND
 	src/inOneWeekend/main.cc
+	src/inOneWeekend/camera.h
+	src/inOneWeekend/hittable.h
+	src/inOneWeekend/hittable_list.h
+	src/inOneWeekend/sphere.h
+	src/inOneWeekend/rtweekend.h
 	src/inOneWeekend/color.h
 	src/inOneWeekend/ray.h
 	src/inOneWeekend/vec3.h

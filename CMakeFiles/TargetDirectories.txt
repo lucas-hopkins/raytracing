@@ -1,3 +1,0 @@
-/home/ilae/repos/raytracing/CMakeFiles/inOneWeekend.dir
-/home/ilae/repos/raytracing/CMakeFiles/edit_cache.dir
-/home/ilae/repos/raytracing/CMakeFiles/rebuild_cache.dir
